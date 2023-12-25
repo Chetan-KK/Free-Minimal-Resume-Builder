@@ -20,8 +20,8 @@ const Resume = () => {
   const { skillsData } = useSkillsData();
 
   return (
-    <main className="resume w-[794px] overflow-hidden mx-auto p-3">
-      <header className="flex flex-col gap-1 border-b pb-2">
+    <main className="resume w-[794px] overflow-hidden mx-auto p-3 text-primary">
+      <header className="flex flex-col gap-1 border-b pb-1">
         <h1 className="font-bold text-xl text-center">{resumeData.fullName}</h1>
         {/* contact */}
         <div className="flex justify-center gap-4 text-xs">
@@ -50,15 +50,17 @@ const Resume = () => {
           </div>
         </div>
       </header>
+
       {/* summary */}
       <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Summary</h1>
         <p className="text-xs text-justify indent-5">{resumeSummary.summary}</p>
       </div>
+
       {/* experience */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Experience</h1>
-        <div className="text-xs text-justify flex flex-col gap-2">
+        <div className="text-xs text-justify flex flex-col gap-1">
           {experienceData.map((experience, _) => (
             <div className="" key={_}>
               <div className="flex justify-between items-center">
@@ -82,10 +84,11 @@ const Resume = () => {
           ))}
         </div>
       </div>
+
       {/* projects */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Projects</h1>
-        <div className="text-xs text-justify flex flex-col gap-2">
+        <div className="text-xs text-justify flex flex-col gap-1">
           {projectData.map((project, _) => (
             <div className="" key={_}>
               <div className="flex justify-between items-center">
@@ -111,7 +114,7 @@ const Resume = () => {
       </div>
 
       {/* achievements */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Achievements</h1>
         <div className="text-xs grid grid-cols-[repeat(2,1fr)]  gap-1 grid-rows-[1fr]">
           {achievementsData.map((achievement, _) => (
@@ -124,7 +127,7 @@ const Resume = () => {
       </div>
 
       {/* education */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Education</h1>
         <div className="text-xs text-justify flex flex-col gap-1">
           {educationData.map((education, _) => (
@@ -147,7 +150,7 @@ const Resume = () => {
       </div>
 
       {/* certifications */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 border-b py-1">
         <h1 className="font-bold uppercase">Certifications</h1>
         <div className="text-xs text-justify flex flex-col gap-1">
           {certificationsData.map((certification, _) => (
@@ -168,9 +171,9 @@ const Resume = () => {
       </div>
 
       {/* skills */}
-      <div className="flex flex-col gap-1 border-b py-2">
+      <div className="flex flex-col gap-1 py-1">
         <h1 className="font-bold uppercase">Skills</h1>
-        <div className="text-xs text-justify flex flex-col gap-1.5">
+        <div className="text-xs text-justify flex flex-col gap-1">
           {skillsData.map((skill, _) => (
             <div className="" key={_}>
               <span className="font-bold whitespace-nowrap">

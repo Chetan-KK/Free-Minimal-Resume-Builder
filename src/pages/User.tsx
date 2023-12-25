@@ -43,14 +43,14 @@ const User = () => {
       id: "linkedin",
       label: "Linkedin URL",
       type: "text",
-      placeholder: "https://www.linkedin.com/in/username",
+      placeholder: "/in/chetan-khulage",
       value: resumeData.linkedin,
     },
     {
       id: "github",
       label: "GitHub URL",
       type: "text",
-      placeholder: "https://www.github.com/username",
+      placeholder: "Chetan-KK",
       value: resumeData.github,
     },
     {

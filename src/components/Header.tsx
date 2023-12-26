@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center sm:flex-row gap-3 sm:pt-2 pt-4 flex-col px-5 py-2 border-b-border border-b">
       <Link to={"/"}>
-        <div className="font-bold">F.M.R.B.</div>
+        <div className="font-bold flex sm:flex-col leading-4">
+          <p>F.M.</p>
+          <p>R.B.</p>
+        </div>
       </Link>
       <div className="flex justify-center gap-1 sm:gap-3 items-center">
         <Link to={"/about"}>

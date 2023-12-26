@@ -12,6 +12,7 @@ import Education from "./pages/Education";
 import Certifications from "./pages/Certifications";
 import Skills from "./pages/Skills";
 import About from "./pages/About";
+import Example from "./pages/Example";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/create/certifications" element={<Certifications />} />
         <Route path="/create/skills" element={<Skills />} />
         <Route path="/preview" element={<Preview />} />
+        <Route path="/example" element={<Example />} />
       </Routes>
     </div>
   );

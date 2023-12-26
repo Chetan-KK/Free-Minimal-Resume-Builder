@@ -65,7 +65,10 @@ const SidePanel = () => {
   return (
     <div className=" p-2 pt-0 flex flex-col items-center">
       <Link to={"/"}>
-        <div className="font-bold mb-2">RB</div>
+        <div className="font-bold flex flex-col leading-4 mb-2">
+          <p>F.M.</p>
+          <p>R.B.</p>
+        </div>
       </Link>
       <TooltipProvider>
         <div className="border-b border-t flex justify-center items-center flex-col gap-3 py-2">

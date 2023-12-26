@@ -20,7 +20,7 @@ const Resume = () => {
   const { skillsData } = useSkillsData();
 
   return (
-    <main className="resume w-[794px] overflow-hidden mx-auto p-3 text-primary">
+    <main className="resume-container w-[794px] overflow-hidden mx-auto p-3 text-primary">
       {!(resumeData.fullName === "") && (
         <header className="flex flex-col gap-1 border-b pb-1">
           <h1 className="font-bold text-xl text-center">

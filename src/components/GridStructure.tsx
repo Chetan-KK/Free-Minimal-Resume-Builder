@@ -72,24 +72,6 @@ const GridStructure = ({ children }: { children: ReactNode }) => {
               </Link>
             </div>
           </div>
-
-          {/* <ResizablePanelGroup direction="horizontal" className="max-h-screen">
-            <ResizablePanel
-              defaultSize={10}
-              minSize={10}
-              maxSize={10}
-              className="p-3"
-            >
-              <SidePanel />
-            </ResizablePanel>
-            <ResizableHandle />
-            <ResizablePanel defaultSize={90} minSize={90}>
-              <div className="overflow-y-auto h-screen p-3 pt-6">
-                {children}
-              </div>
-            </ResizablePanel>
-          </ResizablePanelGroup>
-           */}
         </>
       )}
     </div>

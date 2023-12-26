@@ -6,9 +6,15 @@ import {
   Star,
   User,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const SidePanel = () => {
   const options = [
@@ -54,19 +60,39 @@ const SidePanel = () => {
     },
   ];
 
+  const location = useLocation();
+
   return (
     <div className=" p-2 pt-0 flex flex-col items-center">
-      <div className="font-bold mb-2">RB</div>
-      <div className="border-b border-t flex justify-center items-center flex-col gap-3 py-2">
-        {options.map((option, _) => (
-          <Link to={`/create/${option.link}`} key={_}>
-            <Button className="cursor-pointer px-2" variant={"ghost"} key={_}>
-              <option.icon className="w-5 aspect-square" />
-            </Button>
-          </Link>
-        ))}
-        <ModeToggle />
-      </div>
+      <Link to={"/"}>
+        <div className="font-bold mb-2">RB</div>
+      </Link>
+      <TooltipProvider>
+        <div className="border-b border-t flex justify-center items-center flex-col gap-3 py-2">
+          {options.map((option, _) => (
+            <Tooltip key={_}>
+              <TooltipTrigger asChild>
+                <Link to={`/create/${option.link}`}>
+                  <Button
+                    className={`cursor-pointer px-2 ${
+                      option.link === location.pathname.split("/")[2] &&
+                      "bg-accent"
+                    }`}
+                    variant={"ghost"}
+                    key={_}
+                  >
+                    <option.icon className="w-5 aspect-square" />
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{option.name}</p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
+          <ModeToggle />
+        </div>
+      </TooltipProvider>
     </div>
   );
 };

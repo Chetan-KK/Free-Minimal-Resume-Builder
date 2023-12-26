@@ -19,8 +19,6 @@ const Resume = () => {
   const { certificationsData } = useCertificationsData();
   const { skillsData } = useSkillsData();
 
-  console.log();
-
   return (
     <main className="resume w-[794px] overflow-hidden mx-auto p-3 text-primary">
       {!(resumeData.fullName === "") && (

@@ -1,5 +1,69 @@
-*,
-*::before,
-*::after {
-  /* box-shadow: 0 0 0 1px red; */
+/* Responsive styles using vw and vh */
+
+.resume-container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 1vw;
+  font-size: 2vw;
 }
+
+.header-section {
+  border-bottom: 0.1vw solid #ccc;
+  padding-bottom: 0.5vw;
+}
+
+.full-name {
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-section,
+.links-section {
+  display: flex;
+  justify-content: center;
+  gap: 0.4vw;
+  font-size: 0.8vw;
+}
+
+.summary-section {
+  border-bottom: 0.1vw solid #ccc;
+  padding-bottom: 0.5vw;
+}
+
+.summary-title {
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary-text {
+  font-size: 0.8vw;
+  text-align: justify;
+  text-indent: 0.5vw;
+}
+
+/* Add similar styling for other sections */
+/* Example for Experience section: */
+
+.experience-section {
+  border-bottom: 0.1vw solid #ccc;
+  padding-bottom: 0.5vw;
+}
+
+.experience-title {
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.experience-list {
+  font-size: 0.8vw;
+  text-align: justify;
+}
+
+.experience-item {
+  /* Add your styling for each item in the experience list */
+}
+
+/* Add styling for other sections as needed */

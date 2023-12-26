@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -17,16 +18,11 @@ const Home = () => {
             Start creating resume now
           </Button>
         </Link>
+        <Link to={"/example"} className="ml-2 underline underline-offset-4">
+          Example resume
+        </Link>
       </div>
-      <div className="flex text-center justify-center items-center p-3">
-        Made with ❤ by{" "}
-        <a
-          href="https://www.linkedin.com/in/chetan-khulage"
-          className="ml-2 underline underline-offset-4"
-        >
-          Chetan-KK
-        </a>
-      </div>
+      <Footer />
     </div>
   );
 };

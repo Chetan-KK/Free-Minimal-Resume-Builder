@@ -11,12 +11,14 @@ import Achievements from "./pages/Achievements";
 import Education from "./pages/Education";
 import Certifications from "./pages/Certifications";
 import Skills from "./pages/Skills";
+import About from "./pages/About";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/create/user" element={<User />} />
         <Route path="/create/summary" element={<Summary />} />
         <Route path="/create/experience" element={<Experience />} />

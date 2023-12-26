@@ -11,14 +11,13 @@ const Preview = () => {
 
   return (
     <div>
-      <div className="">
-        <Resume />
-      </div>
-      <div className="fixed right-5 top-3 print:opacity-0">
+      <div className="flex justify-between items-center p-3 border-b">
+        <Button onClick={() => navigate(-1)}>Back</Button>
+        <p className="font-bold">F.M.R.B.</p>
         <Button onClick={handlePrint}>Print</Button>
       </div>
-      <div className="fixed left-5 top-3 print:opacity-0">
-        <Button onClick={() => navigate(-1)}>Back</Button>
+      <div className="overflow-scroll">
+        <Resume />
       </div>
     </div>
   );

@@ -1,9 +1,11 @@
 import {
   Album,
-  CheckCircle,
+  BookmarkPlus,
   FilePlus,
+  GraduationCap,
   ScrollText,
   Star,
+  Trophy,
   User,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -30,7 +32,7 @@ const SidePanel = () => {
     },
     {
       name: "Experience",
-      icon: ScrollText,
+      icon: BookmarkPlus,
       link: "experience",
     },
     {
@@ -40,17 +42,17 @@ const SidePanel = () => {
     },
     {
       name: "Awards and Achievements",
-      icon: Star,
+      icon: Trophy,
       link: "achievements",
     },
     {
       name: "Education",
-      icon: Album,
+      icon: GraduationCap,
       link: "education",
     },
     {
       name: "Certifications",
-      icon: CheckCircle,
+      icon: Album,
       link: "certifications",
     },
     {

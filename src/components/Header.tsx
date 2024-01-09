@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
 import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 
 const Header = () => {
   return (
@@ -19,7 +20,14 @@ const Header = () => {
           href="https://github.com/Chetan-KK/Free-Minimal-Resume-Builder"
           target="_blank"
         >
-          <Button variant={"link"}>Github</Button>
+          <Button variant={"link"}>
+            Github{" "}
+            <ExternalLink
+              style={{ marginLeft: "3px", marginBottom: "2px" }}
+              height={15}
+              width={15}
+            />
+          </Button>
         </a>
         <Link to={"/create/user"}>
           <Button variant={"outline"}>Create Resume</Button>

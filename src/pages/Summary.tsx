@@ -48,6 +48,7 @@ const Summary = () => {
           <div key={_}>
             <Label htmlFor={input.id}>{input.label}</Label>
             <Textarea
+              maxLength={418}
               placeholder={input.placeholder}
               value={resumeSummary.summary}
               onChange={(e) => setResumeSummary({ summary: e.target.value })}

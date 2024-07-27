@@ -127,7 +127,7 @@ const Experience = () => {
                   onChange={(e) =>
                     handleExperienceChange(index, "startDate", e.target.value)
                   }
-                  placeholder="Start Date"
+                  placeholder="Jan-01"
                   required
                 />
               </div>
@@ -142,7 +142,7 @@ const Experience = () => {
                   onChange={(e) =>
                     handleExperienceChange(index, "endDate", e.target.value)
                   }
-                  placeholder="End Date"
+                  placeholder="Dec-31"
                   required
                 />
               </div>
@@ -157,7 +157,9 @@ const Experience = () => {
                     handleExperienceChange(index, "description", e.target.value)
                   }
                   className="h-48"
-                  placeholder="Description"
+                  placeholder="Developed a application ...
+Created functionality ...
+Implemented features ..."
                   required
                 ></Textarea>
               </div>

@@ -85,7 +85,7 @@ const Skills = () => {
                   onChange={(e) =>
                     handleSkillChange(index, "skillType", e.target.value)
                   }
-                  placeholder="Skill Type"
+                  placeholder="Designing"
                   required
                 />
               </div>
@@ -100,7 +100,7 @@ const Skills = () => {
                   onChange={(e) =>
                     handleSkillChange(index, "skills", e.target.value)
                   }
-                  placeholder="Skills"
+                  placeholder="Photoshop, Illustrator ..."
                   required
                 />
               </div>

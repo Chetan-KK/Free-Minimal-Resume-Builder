@@ -92,7 +92,7 @@ const Projects = () => {
                   onChange={(e) =>
                     handleProjectChange(index, "projectName", e.target.value)
                   }
-                  placeholder="Project Name"
+                  placeholder="Resume Builder"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const Projects = () => {
                   onChange={(e) =>
                     handleProjectChange(index, "usedLanguages", e.target.value)
                   }
-                  placeholder="Used Languages"
+                  placeholder="React, Tailwind, Zustand..."
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ const Projects = () => {
                   onChange={(e) =>
                     handleProjectChange(index, "startDate", e.target.value)
                   }
-                  placeholder="Start Date"
+                  placeholder="Jan-01"
                   required
                 />
               </div>
@@ -137,7 +137,7 @@ const Projects = () => {
                   onChange={(e) =>
                     handleProjectChange(index, "endDate", e.target.value)
                   }
-                  placeholder="End Date"
+                  placeholder="Dec-31"
                   required
                 />
               </div>
@@ -152,7 +152,9 @@ const Projects = () => {
                     handleProjectChange(index, "description", e.target.value)
                   }
                   className="h-48"
-                  placeholder="Description"
+                  placeholder="Implemented session...
+Gained users...
+Demonstrated visual ex..."
                   required
                 ></Textarea>
               </div>

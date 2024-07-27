@@ -99,7 +99,7 @@ const Certifications = () => {
                       e.target.value
                     )
                   }
-                  placeholder="Certification Name"
+                  placeholder="Three js journey by bruno simon"
                   required
                 />
               </div>
@@ -121,7 +121,7 @@ const Certifications = () => {
                       e.target.value
                     )
                   }
-                  placeholder="Certification Year"
+                  placeholder="2022"
                   required
                 />
               </div>
@@ -143,7 +143,7 @@ const Certifications = () => {
                       e.target.value
                     )
                   }
-                  placeholder="Learned Languages"
+                  placeholder="Three js, Cannon.js ..."
                   required
                 />
               </div>

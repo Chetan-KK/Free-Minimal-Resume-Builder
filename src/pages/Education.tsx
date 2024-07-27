@@ -99,7 +99,7 @@ const Education = () => {
                       e.target.value
                     )
                   }
-                  placeholder="University Name"
+                  placeholder="Savitribai Phule Pune University"
                   required
                 />
               </div>
@@ -121,7 +121,7 @@ const Education = () => {
                       e.target.value
                     )
                   }
-                  placeholder="Qualification Name"
+                  placeholder="Bachelor in Computer Science"
                   required
                 />
               </div>
@@ -136,7 +136,7 @@ const Education = () => {
                   onChange={(e) =>
                     handleEducationChange(index, "result", e.target.value)
                   }
-                  placeholder="Result"
+                  placeholder="8.73 CGPA / pursuing"
                   required
                 />
               </div>
@@ -151,7 +151,7 @@ const Education = () => {
                   onChange={(e) =>
                     handleEducationChange(index, "startDate", e.target.value)
                   }
-                  placeholder="Start Date"
+                  placeholder="2022"
                   //   required
                 />
               </div>
@@ -166,7 +166,7 @@ const Education = () => {
                   onChange={(e) =>
                     handleEducationChange(index, "endDate", e.target.value)
                   }
-                  placeholder="End Date"
+                  placeholder="2025"
                   //   required
                 />
               </div>

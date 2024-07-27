@@ -90,7 +90,7 @@ const Achievements = () => {
                   onChange={(e) =>
                     handleAchievementChange(index, "year", e.target.value)
                   }
-                  placeholder="Achievement Year"
+                  placeholder="2024"
                   required
                 />
               </div>
@@ -105,7 +105,7 @@ const Achievements = () => {
                   onChange={(e) =>
                     handleAchievementChange(index, "title", e.target.value)
                   }
-                  placeholder="Achievement Title"
+                  placeholder="MindSpark '23 webscape winner"
                   required
                 />
               </div>

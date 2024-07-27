@@ -28,48 +28,58 @@ const Resume = () => {
           </h1>
           {/* contact */}
           <div className="flex justify-center gap-4 text-xs">
-            <a
-              href={`mailto:${resumeData.email}`}
-              target="_blank"
-              className="flex items-center gap-1 justify-center"
-            >
-              <i className="fa-solid fa-envelope w-4 translate-y-0.5 h-4"></i>
-              {resumeData.email}
-            </a>
-            <a
-              href={`tel:${resumeData.phone}`}
-              className="flex items-center gap-1 justify-center"
-            >
-              <i className="fa-solid fa-phone"></i>
-              {resumeData.phone}
-            </a>
+            {!(resumeData.email === "") && (
+              <a
+                href={`mailto:${resumeData.email}`}
+                target="_blank"
+                className="flex items-center gap-1 justify-center"
+              >
+                <i className="fa-solid fa-envelope w-4 translate-y-0.5 h-4"></i>
+                {resumeData.email}
+              </a>
+            )}
+            {!(resumeData.phone === "") && (
+              <a
+                href={`tel:${resumeData.phone}`}
+                className="flex items-center gap-1 justify-center"
+              >
+                <i className="fa-solid fa-phone"></i>
+                {resumeData.phone}
+              </a>
+            )}
           </div>
           {/* links */}
           <div className="flex justify-center gap-4 text-xs">
-            <a
-              href={`https://github.com/${resumeData.github}`}
-              target="_blank"
-              className="flex items-center gap-1 justify-center"
-            >
-              <i className="fa-brands fa-github"></i>
-              {resumeData.github}
-            </a>
-            <a
-              href={resumeData.website}
-              target="_blank"
-              className="flex items-center gap-1 justify-center"
-            >
-              <i className="fa-solid fa-globe"></i>
-              {resumeData.website}
-            </a>
-            <a
-              href={`https://www.linkedin.com/${resumeData.linkedin}/`}
-              target="_blank"
-              className="flex items-center gap-1 justify-center"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-              {resumeData.linkedin}
-            </a>
+            {!(resumeData.github === "") && (
+              <a
+                href={`https://github.com/${resumeData.github}`}
+                target="_blank"
+                className="flex items-center gap-1 justify-center"
+              >
+                <i className="fa-brands fa-github"></i>
+                {resumeData.github}
+              </a>
+            )}
+            {!(resumeData.website === "") && (
+              <a
+                href={resumeData.website}
+                target="_blank"
+                className="flex items-center gap-1 justify-center"
+              >
+                <i className="fa-solid fa-globe"></i>
+                {resumeData.website}
+              </a>
+            )}
+            {!(resumeData.linkedin === "") && (
+              <a
+                href={`https://www.linkedin.com/${resumeData.linkedin}/`}
+                target="_blank"
+                className="flex items-center gap-1 justify-center"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+                {resumeData.linkedin}
+              </a>
+            )}
           </div>
         </header>
       )}
